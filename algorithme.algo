@@ -1,0 +1,22 @@
+ALGORITHM senten
+VAR 
+ sentence_length =0;
+ word_count =0;
+ vowel_count =0;
+ vowels="lou ay ben ahmed ";
+
+BEGIN
+FOR char in sentence:
+  sentence_length +=1;
+  IF char == ' ' THEN
+
+  word_count +=1;
+  elif char in vowels:
+  vowel_count +=1;
+  word_count +=1;
+  
+  END_IF
+END_FOR
+   word_count += 1; 
+ RETURN sentence_length, word_count, vowel_count;
+END
